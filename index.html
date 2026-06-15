@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mundo dos Espelhos - Óptica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>O Fascinante Mundo dos Espelhos</h1>
+        <p>Uma jornada pela óptica geométrica: da reflexão perfeita às distorções esféricas.</p>
+    </header>
+
+    <main class="container">
+        <section class="animation-section">
+            <h2>Simulador Interativo: Lei da Reflexão</h2>
+            <p>Movimente o mouse sobre o canvas para mudar o ângulo do raio de luz incidente (i) e observe o raio refletido (r). Ambos são iguais em relação à linha normal!</p>
+            <div class="canvas-container">
+                <canvas id="mirrorCanvas" width="600" height="400"></canvas>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>O que é um Espelho?</h2>
+            <p>Na física, um espelho é uma superfície lisa e altamente polida capaz de refletir a luz de forma **especular** (regular). Isso significa que os raios de luz que atingem a superfície retornam ao meio de origem mantendo o paralelismo, permitindo a formação de imagens nítidas.</p>
+
+            <div class="grid-espelhos">
+                <div class="card">
+                    <h3>Espelhos Planos</h3>
+                    <p>São superfícies planas e polidas. Suas principais características são:</p>
+                    <ul>
+                        <li><strong>Imagem Virtual:</strong> Formada atrás do espelho.</li>
+                        <li><strong>Direta e do mesmo tamanho:</strong> Não distorce e não inverte de cabeça para baixo.</li>
+                        <li><strong>Enantiomorfa:</strong> Inverte a direita pela esquerda (o motivo de a palavra "AMBULÂNCIA" ser escrita invertida na frente dos veículos).</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Espelhos Esféricos</h3>
+                    <p>Derivados de uma calota esférica (como uma colher), dividem-se em:</p>
+                    <ul>
+                        <li><strong>Côncavos:</strong> A superfície refletora é a interna. Podem ampliar a imagem (como espelhos de maquiagem/barbear) ou projetá-la invertida.</li>
+                        <li><strong>Convexos:</strong> A superfície refletora é a externa. Sempre formam imagens menores, diretas e virtuais, ampliando o campo de visão (usados em retrovisores e segurança de lojas).</li>
+                    </ul>
+                </div>
+            </div>
+
+           <div class="equation-box">
+    <h3>A Matemática dos Espelhos Esféricos (Equação de Gauss)</h3>
+    <p>Para calcular a posição da imagem formada por calotas esféricas, relacionamos o foco (f), a distância do objeto (p) e a distância da imagem (p'):</p>
+    1/f = 1/p + 1/p'
+    <p><small>Nota: Para espelhos planos, o foco tende ao infinito, o que faz com que p = -p' (imagem virtual e à mesma distância).</small></p>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para fins educacionais de Física e Óptica Geométrica.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
